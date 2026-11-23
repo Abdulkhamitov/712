@@ -1,0 +1,12 @@
+{
+  "name": "node-server-practice",
+  "version": "1.0.0",
+  "description": "Практическая работа №19: Node.js HTTP server + REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "advanced": "node advanced-server.js"
+  },
+  "keywords": ["nodejs", "http", "rest", "api"],
+  "license": "MIT"
+}
