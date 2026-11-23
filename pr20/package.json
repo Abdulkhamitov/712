@@ -1,0 +1,15 @@
+{
+  "name": "express-routing-practice",
+  "version": "1.0.0",
+  "description": "Практическая работа №20: Express.js роутинг и middleware",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": ["express", "routing", "rest", "api"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
