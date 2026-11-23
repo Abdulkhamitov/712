@@ -1,0 +1,80 @@
+### Базовый маршрут
+GET http://localhost:3000/
+
+### Статус
+GET http://localhost:3000/api/status
+
+### Health-check
+GET http://localhost:3000/health
+
+### Все пользователи
+GET http://localhost:3000/api/users
+
+### Пользователи с фильтром по роли
+GET http://localhost:3000/api/users?role=admin
+
+### Поиск пользователей по имени
+GET http://localhost:3000/api/users?search=Иван
+
+### Пользователь по ID
+GET http://localhost:3000/api/users/1
+
+### Создать пользователя
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Алексей Смирнов",
+  "email": "alexey@example.com",
+  "role": "user"
+}
+
+### Обновить пользователя
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Иван Петров",
+  "email": "ivan.new@example.com"
+}
+
+### Удалить пользователя
+DELETE http://localhost:3000/api/users/2
+
+### Все товары
+GET http://localhost:3000/api/products
+
+### Товары категории electronics в наличии
+GET http://localhost:3000/api/products?category=electronics&inStock=true
+
+### Товары с ценой от 1000 до 40000
+GET http://localhost:3000/api/products?minPrice=1000&maxPrice=40000
+
+### Товар по ID
+GET http://localhost:3000/api/products/1
+
+### Создать товар
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Клавиатура",
+  "price": 3500,
+  "category": "electronics",
+  "inStock": true
+}
+
+### Обновить товар
+PUT http://localhost:3000/api/products/1
+Content-Type: application/json
+
+{
+  "price": 45000,
+  "inStock": false
+}
+
+### Удалить товар
+DELETE http://localhost:3000/api/products/3
+
+### Несуществующий маршрут
+GET http://localhost:3000/api/unknown
