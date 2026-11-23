@@ -1,0 +1,33 @@
+.app { font-family: Arial, sans-serif; }
+
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  background: #fafafa;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.nav-list a:hover {
+  background: #eee;
+}
+
+.nav-list a.active {
+  background: #333;
+  color: #fff;
+}
+
+.main { padding: 20px; }
